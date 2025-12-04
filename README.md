@@ -56,7 +56,7 @@ CREATE TABLE funcionarios (
 );
 ```
 -----------------------------------------------------------------------------
-Para testar o projeto, você deve ter todos os [Requisitos para rodar](https://github.com/ibsongomes/Mini_Projeto-CRUD/edit/main/README.md#---requisitos-para-rodar-o-crud) e baixar ou copiar o código de todos os aqruivos disponíveis: primeiro a [configuração do banco de dados](https://github.com/ibsongomes/Mini_Projeto-CRUD/blob/main/config.py), depois a [conexão com o banco de dados](https://github.com/ibsongomes/Mini_Projeto-CRUD/blob/main/db.py), e por fim a [Interface Gráfica](https://github.com/ibsongomes/Mini_Projeto-CRUD/blob/main/main.py).
+Para testar o projeto, você deve ter todos os [Requisitos para rodar](https://github.com/ibsongomes/Mini_Projeto-CRUD?tab=readme-ov-file#---requisitos-para-rodar-o-crud) e baixar ou copiar o código de todos os aqruivos disponíveis: primeiro a [configuração do banco de dados](https://github.com/ibsongomes/Mini_Projeto-CRUD/blob/main/config.py), depois a [conexão com o banco de dados](https://github.com/ibsongomes/Mini_Projeto-CRUD/blob/main/db.py), e por fim a [Interface Gráfica](https://github.com/ibsongomes/Mini_Projeto-CRUD/blob/main/main.py).
 
 Obrigado!
 
