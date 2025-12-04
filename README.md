@@ -22,14 +22,14 @@ O objetivo é fazer um sistema simples de CRUD para cadastro de funcionários qu
 
 Neste projeto foi utilizado o Python, Tkinter (biblioteca nativa do Python), Mysql-Connector-Python (biblioteca não nativa do Python), Mysql, e 3 arquivos diferentes para a integridade do código.
 
-#### REQUISITOS PARA RODAR O CRUD:
+#### -- REQUISITOS PARA RODAR O CRUD:
 
 - Instalar Python;
 - Instalar o Mysql Server e o Mysql Workbench;
 - Instalar o VsCode;
 - Instalar a biblioteca mysql-connector-python no terminal;
 
-#### FUNCIONALIDADES:
+#### -- FUNCIONALIDADES:
 
 - Cadastrar funcionários (nome, cargo, salário, setor, telefone, email, data de admissão).
 - Listar todos os funcionários em uma tabela.
@@ -37,7 +37,7 @@ Neste projeto foi utilizado o Python, Tkinter (biblioteca nativa do Python), Mys
 - Atualizar campos específicos de um funcionário já cadastrado.
 - Deletar funcionário por ID (com confirmação).
 
-#### BANCO DE DADOS:
+#### -- BANCO DE DADOS:
 
 Para criar o banco de dados, você deve executar esses comandos no Mysql Workbench:
 ```
