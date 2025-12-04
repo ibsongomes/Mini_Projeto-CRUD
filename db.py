@@ -1,4 +1,3 @@
-# db.py
 import mysql.connector
 from mysql.connector import Error
 from config import DB_CONFIG
@@ -40,7 +39,6 @@ def criar_funcionario(nome: str, cargo: Optional[str], salario: Optional[float],
         if conn and conn.is_connected():
             conn.close()
 
-# READ (todos)
 def listar_funcionarios() -> List[Dict]:
     query = "SELECT id, nome, cargo, salario, setor, telefone, email, data_admissao FROM funcionarios"
     conn = get_connection()
@@ -53,7 +51,6 @@ def listar_funcionarios() -> List[Dict]:
     finally:
         conn.close()
 
-# READ (por id)
 def buscar_por_id(func_id: int) -> Optional[Dict]:
     query = "SELECT id, nome, cargo, salario, setor, telefone, email, data_admissao FROM funcionarios WHERE id = %s"
     conn = get_connection()
@@ -66,7 +63,6 @@ def buscar_por_id(func_id: int) -> Optional[Dict]:
     finally:
         conn.close()
 
-# UPDATE
 def atualizar_funcionario(func_id: int, dados: Dict) -> bool:
     """
     dados: dicionário com chaves permitidas: nome,cargo,salario,setor,telefone,email,data_admissao
@@ -97,7 +93,6 @@ def atualizar_funcionario(func_id: int, dados: Dict) -> bool:
     finally:
         conn.close()
 
-# DELETE
 def deletar_funcionario(func_id: int) -> bool:
     query = "DELETE FROM funcionarios WHERE id = %s"
     conn = get_connection()
@@ -110,3 +105,4 @@ def deletar_funcionario(func_id: int) -> bool:
         return affected > 0
     finally:
         conn.close()
+
