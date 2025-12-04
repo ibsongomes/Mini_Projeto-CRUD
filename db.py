@@ -7,7 +7,6 @@ import datetime
 def get_connection():
     return mysql.connector.connect(**DB_CONFIG)
 
-# CREATE
 def criar_funcionario(nome: str, cargo: Optional[str], salario: Optional[float],
                       setor: Optional[str], telefone: Optional[str],
                       email: Optional[str], data_admissao: Optional[str]) -> int:
@@ -21,7 +20,6 @@ def criar_funcionario(nome: str, cargo: Optional[str], salario: Optional[float],
     """
     da = None
     if data_admissao:
-        # tenta converter para date
         da = datetime.datetime.strptime(data_admissao, "%Y-%m-%d").date()
     conn = None
     try:
@@ -73,7 +71,6 @@ def atualizar_funcionario(func_id: int, dados: Dict) -> bool:
     for chave in ("nome","cargo","salario","setor","telefone","email","data_admissao"):
         if chave in dados:
             if chave == "data_admissao" and dados[chave]:
-                # parse
                 valores.append(datetime.datetime.strptime(dados[chave], "%Y-%m-%d").date())
             else:
                 valores.append(dados[chave])
@@ -105,4 +102,5 @@ def deletar_funcionario(func_id: int) -> bool:
         return affected > 0
     finally:
         conn.close()
+
 
