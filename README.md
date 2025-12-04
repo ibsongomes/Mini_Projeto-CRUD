@@ -18,3 +18,5 @@ Ou seja, A função do CRUD é permitir criar, consultar, atualizar e excluir da
 
 ## Sobre o Projeto
 
+O objetivo é realizar o cadastro de funcionários numa empresa fictícia.
+
